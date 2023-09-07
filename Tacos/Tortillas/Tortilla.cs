@@ -1,33 +1,31 @@
-using IngredientLib.Ingredient.Items;
-using Kitchen;
 using KitchenData;
 using KitchenLib.Customs;
 using KitchenLib.References;
-using KitchenLib.Utils;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace Mexican_Grill.Tacos.Tortilla{
-    public class Tortilla : CustomItem
+namespace Mexican_Grill.Tacos.Tortilla
+{
+    public class Tortilla : CustomItemGroup //You're looking to make an itemgroup, not an item.
     {
         public override string UniqueNameID => "Tortilla";
         public override ItemStorage ItemStorageFlags => ItemStorage.None;
         public override ItemCategory ItemCategory => ItemCategory.Generic;
 
-        public override List<ItemGroup.ItemSet> Sets => new()
+        public override List<ItemGroup.ItemSet> Sets => new List<ItemGroup.ItemSet>()
         {
-            new()
+            new ItemGroup.ItemSet()
             {
-                Items = new()
+                Items = new List<Item>()
                 {
-                    GetGDO<Item>(ItemReferences.EggCracked),
-                    GetGDO<Item>(ItemReferences.Dough)
+                    Main.GetGDO<Item>(ItemReferences.EggCracked),
+                    Main.GetGDO<Item>(ItemReferences.Dough)
                 },
                 Max = 2,
                 Min = 2,
             }
         };
 
-        public override GameObject Prefab => GetPrefab("Tortilla");
+        public override GameObject Prefab => Main.GetPrefab("Tortilla");
     }
 }

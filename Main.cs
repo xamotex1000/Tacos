@@ -1,26 +1,24 @@
-﻿global using static Mexican_Grill.Main;
-global using static KitchenLib.Utils.GDOUtils;
-global using static KitchenLib.Utils.LocalisationUtils;
-using Kitchen;
-using KitchenData;
+﻿using KitchenData;
 using KitchenLib;
 using KitchenLib.Customs;
-using KitchenLib.Event;
 using KitchenLib.Utils;
 using KitchenMods;
-using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
 using UnityEngine;
-using static KitchenLib.Utils.MaterialUtils;
 
-namespace Mexican_Grill{
+namespace Mexican_Grill
+{
     public class Main : BaseMod
     {
+        // Mod Info 
         public const string GUID = "xamotex.MexicanFood";
+        public const string NAME = "Mexican Grill";
         public const string VERSION = "1.0";
+        public const string AUTHOR = "Milo Brown";
+        public const string GAMEVERSION = ">=1.0.0";
 
-        public Main() : base(GUID, "Mexican Grill", "Milo Brown", VERSION, ">=1.0.0", Assembly.GetExecutingAssembly()) { }
+        public Main() : base(GUID, NAME, AUTHOR, VERSION, GAMEVERSION, Assembly.GetExecutingAssembly()) { }
 
         public static AssetBundle Bundle;
 
@@ -28,10 +26,6 @@ namespace Mexican_Grill{
         {
             Bundle = mod.GetPacks<AssetBundleModPack>().SelectMany(e => e.AssetBundles).ToList()[0];
             AddGameData();
-            Events.BuildGameDataEvent += (s, args) =>
-            {
-                args.gamedata.ProcessesView.Initialise(args.gamedata);
-            };
         }
         internal void AddGameData()
         {
@@ -53,8 +47,9 @@ namespace Mexican_Grill{
             Log($"Registered {counter} GameDataObjects.");
         }
         public interface IWontRegister { }
-        public static T GetGDO<T>(int id) where T : GameDataObject => GetExistingGDO(id) as T;
+        public static T GetGDO<T>(int id) where T : GameDataObject => GDOUtils.GetExistingGDO(id) as T;
         public static GameObject GetPrefab(string name) => Bundle.LoadAsset<GameObject>(name);
-        public static T GetAsset<T>(string name) where T : UnityEngine.Object => Bundle.LoadAsset<T>(name);
+        //you won't be needing this for the most part
+        //public static T GetAsset<T>(string name) where T : UnityEngine.Object => Bundle.LoadAsset<T>(name);
     }
 }
