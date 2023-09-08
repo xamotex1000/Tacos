@@ -7,12 +7,10 @@ using KitchenLib;
 using KitchenLib.Customs;
 using KitchenLib.Event;
 using KitchenLib.Utils;
-using KitchenLib.References;
 using KitchenMods;
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
-using Mexican_Grill.Tacos.Ingredients;
 using UnityEngine;
 using static KitchenLib.Utils.MaterialUtils;
 
@@ -22,27 +20,11 @@ namespace Mexican_Grill{
         public const string GUID = "xamotex.MexicanFood";
         public const string VERSION = "1.0";
 
-        public Main() : base(GUID, "Mexican Grill", "Milo Brown", VERSION, ">=1.0.0", Assembly.GetExecutingAssembly()) { }
+        public Main() : base(GUID, "Mexican Grill", "xamotex1000", VERSION, ">=1.0.0", Assembly.GetExecutingAssembly()) { }
 
         public static AssetBundle Bundle;
         private void PreBuild()
         {
-            
-            Events.BuildGameDataEvent += delegate (object _, BuildGameDataEventArgs args)
-            {
-                if (args.gamedata.TryGet(1005005768, out Item item))
-                {
-                    if (!item.DerivedProcesses.Select(x => x.Process?.ID ?? 0).Contains(ProcessReferences.Cook))
-                    {
-                        item.DerivedProcesses.Add(new Item.ItemProcess()
-                        {
-                            Process = (Process)GDOUtils.GetExistingGDO(ProcessReferences.Cook),
-                            Duration = 1f,
-                            Result = GDOUtils.GetCastedGDO<Item, FinishedSteak>()
-                        });
-                    }
-                }
-            };
         }
         protected override void OnPostActivate(Mod mod)
         {
