@@ -8,7 +8,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 namespace Mexican_Grill.Tacos.Tortilla{
-    public class Tortilla : CustomItem
+    public class Tortilla : CustomItemGroup<ItemGroupView>
     {
         public override string UniqueNameID => "Tortilla";
         public override ItemStorage ItemStorageFlags => ItemStorage.None;
@@ -27,7 +27,20 @@ namespace Mexican_Grill.Tacos.Tortilla{
                 Min = 2,
             }
         };
+        public override List<Item.ItemProcess> Processes => new()
+        {
+            new()
+            {
+                Result = GetCastedGDO<Item, SoftShell>(),
+                Duration = 1f,
+                Process = GetGDO<Process>(ProcessReferences.Knead)
+            }
+        };
 
         public override GameObject Prefab => GetPrefab("Tortilla");
+        public override void SetupPrefab(GameObject prefab)
+        {
+            prefab.ApplyMaterialToChild("Tortilla", "Raw Pastry");
+        }
     }
 }

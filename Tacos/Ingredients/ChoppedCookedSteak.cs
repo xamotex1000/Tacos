@@ -7,16 +7,16 @@ using KitchenLib.Utils;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace Mexican_Grill.Tacos.Tortilla{
-    public class HardShell : CustomItemGroup<ItemGroupView>
+namespace Mexican_Grill.Tacos.Ingredients{
+    public class FinishedSteak : CustomItemGroup<ItemGroupView>
     {
-        public override string UniqueNameID => "Hard Shell";
+        public override string UniqueNameID => "Finished Steak";
         public override ItemStorage ItemStorageFlags => ItemStorage.None;
         public override ItemCategory ItemCategory => ItemCategory.Generic;
-        public override GameObject Prefab => GetPrefab("Hard Taco Shell");
+        public override GameObject Prefab => GetPrefab("Steak");
         public override void SetupPrefab(GameObject prefab)
         {
-            prefab.ApplyMaterialToChild("Hard Taco Shell", "Raw Pastry");
+            prefab.ApplyMaterialToChild("Steak", "Well-done");
         }
     }
 }
