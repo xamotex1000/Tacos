@@ -19,7 +19,7 @@ namespace Mexican_Grill.Tacos.Tacos{
             {
                 Items = new()
                 {
-                    GetGDO<Item>(1005005768),
+                    GetGDO<Item>(793377380),
                     GDOUtils.GetCastedGDO<Item, SoftBeef>()
                 },
                 Max = 2,
