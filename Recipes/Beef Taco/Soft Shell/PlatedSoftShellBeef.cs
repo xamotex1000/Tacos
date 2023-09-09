@@ -13,6 +13,8 @@ namespace Mexican_Grill.Tacos.Tacos{
         public override string UniqueNameID => "PlateSoftBeef";
         public override ItemStorage ItemStorageFlags => ItemStorage.None;
         public override ItemCategory ItemCategory => ItemCategory.Generic;
+        public override Item DisposesTo => GetGDO<Item>(ItemReferences.Plate);
+        public override Item DirtiesTo => GetGDO<Item>(ItemReferences.PlateDirty);
         public override List<ItemGroup.ItemSet> Sets => new()
         {
             new()

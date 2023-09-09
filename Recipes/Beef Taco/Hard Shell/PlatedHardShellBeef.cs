@@ -13,6 +13,8 @@ namespace Mexican_Grill.Tacos.Tacos{
         public override string UniqueNameID => "PlateHardBeef";
         public override ItemStorage ItemStorageFlags => ItemStorage.None;
         public override ItemCategory ItemCategory => ItemCategory.Generic;
+        public override Item DisposesTo => GetGDO<Item>(ItemReferences.Plate);
+        public override Item DirtiesTo => GetGDO<Item>(ItemReferences.PlateDirty);
         public override List<ItemGroup.ItemSet> Sets => new()
         {
             new()
@@ -29,7 +31,7 @@ namespace Mexican_Grill.Tacos.Tacos{
         public override GameObject Prefab => GetPrefab("Plated Hard Beef Taco");
         public override void SetupPrefab(GameObject prefab)
         {
-            prefab.ApplyMaterialToChild("Shell", "Raw Pastry");
+            prefab.ApplyMaterialToChild("Shell", "Pie - Mushroom");
             prefab.ApplyMaterialToChild("Beef/1", "Meat Piece Cooked");
             prefab.ApplyMaterialToChild("Beef/2", "Meat Piece Cooked");
             prefab.ApplyMaterialToChild("Beef/3", "Meat Piece Cooked");

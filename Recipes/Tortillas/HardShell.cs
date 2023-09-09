@@ -16,7 +16,7 @@ namespace Mexican_Grill.Tacos.Tortilla{
         public override GameObject Prefab => GetPrefab("Hard Taco Shell");
         public override void SetupPrefab(GameObject prefab)
         {
-            prefab.ApplyMaterialToChild("Hard Taco Shell", "Raw Pastry");
+            prefab.ApplyMaterialToChild("Hard Taco Shell", "Pie - Mushroom");
         }
     }
 }

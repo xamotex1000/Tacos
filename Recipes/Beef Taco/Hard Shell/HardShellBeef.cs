@@ -16,7 +16,7 @@ namespace Mexican_Grill.Tacos.Tacos{
         public override GameObject Prefab => GetPrefab("Hard Beef Taco");
         public override void SetupPrefab(GameObject prefab)
         {
-            prefab.ApplyMaterialToChild("Shell", "Raw Pastry");
+            prefab.ApplyMaterialToChild("Shell", "Pie - Mushroom");
             prefab.ApplyMaterialToChild("Beef/1", "Meat Piece Cooked");
             prefab.ApplyMaterialToChild("Beef/2", "Meat Piece Cooked");
             prefab.ApplyMaterialToChild("Beef/3", "Meat Piece Cooked");
