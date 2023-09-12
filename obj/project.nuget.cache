@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "GTT1Y+tW3H1uWHNMB+dZQv0AwQ0Tbj3b6AJVewmpF75SUN7kw4dqcJPwmQJe+MvOtIk8CFwfJ9CjLu17QUKgRA==",
+  "success": true,
+  "projectFilePath": "/home/xamotex1000/Modding/PlateUp/Dishes/Mexican Grill/Mexican Grill.csproj",
+  "expectedPackageFiles": [
+    "/home/xamotex1000/.nuget/packages/krafs.publicizer/2.2.1/krafs.publicizer.2.2.1.nupkg.sha512",
+    "/home/xamotex1000/.nuget/packages/microsoft.netframework.referenceassemblies/1.0.2/microsoft.netframework.referenceassemblies.1.0.2.nupkg.sha512",
+    "/home/xamotex1000/.nuget/packages/microsoft.netframework.referenceassemblies.net472/1.0.2/microsoft.netframework.referenceassemblies.net472.1.0.2.nupkg.sha512",
+    "/home/xamotex1000/.nuget/packages/yariazen.plateup.modbuildutilities/1.10.21/yariazen.plateup.modbuildutilities.1.10.21.nupkg.sha512"
+  ],
+  "logs": []
+}

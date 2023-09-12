@@ -1,0 +1,63 @@
+{
+  "format": 1,
+  "restore": {
+    "/home/xamotex1000/Modding/PlateUp/Dishes/Mexican Grill/Mexican Grill.csproj": {}
+  },
+  "projects": {
+    "/home/xamotex1000/Modding/PlateUp/Dishes/Mexican Grill/Mexican Grill.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/xamotex1000/Modding/PlateUp/Dishes/Mexican Grill/Mexican Grill.csproj",
+        "projectName": "Mexican Grill",
+        "projectPath": "/home/xamotex1000/Modding/PlateUp/Dishes/Mexican Grill/Mexican Grill.csproj",
+        "packagesPath": "/home/xamotex1000/.nuget/packages/",
+        "outputPath": "/home/xamotex1000/Modding/PlateUp/Dishes/Mexican Grill/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/xamotex1000/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net472"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net472": {
+            "targetAlias": "net472",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net472": {
+          "targetAlias": "net472",
+          "dependencies": {
+            "Krafs.Publicizer": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.1, )"
+            },
+            "Microsoft.NETFramework.ReferenceAssemblies": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.0.2, )",
+              "autoReferenced": true
+            },
+            "Yariazen.PlateUp.ModBuildUtilities": {
+              "target": "Package",
+              "version": "[1.10.21, )"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/6.0.121/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net472</TargetFramework>
+    <RootNamespace>Mexican_Grill</RootNamespace>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <LangVersion>Latest</LangVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Publicize Include="Kitchen.Common:Kitchen.CItemProvider.Item" />
+    <Publicize Include="KitchenMode:Kitchen.LimitedItemSourceView.Items" />
+    <Publicize Include="KitchenMode:Kitchen.LimitedItemSourceView.DisplayedItems" />
+    <PackageReference Include="Krafs.Publicizer" Version="2.2.1">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="Yariazen.PlateUp.ModBuildUtilities" Version="1.10.21" />
+  </ItemGroup>
+
+</Project>

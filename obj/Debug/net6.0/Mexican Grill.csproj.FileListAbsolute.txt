@@ -1,0 +1,10 @@
+/home/xamotex1000/Modding/PlateUp!/Dishes/Mexican Grill/obj/Debug/net6.0/Mexican Grill.csproj.AssemblyReference.cache
+/home/xamotex1000/Modding/PlateUp!/Dishes/Mexican Grill/obj/Debug/net6.0/Mexican Grill.GeneratedMSBuildEditorConfig.editorconfig
+/home/xamotex1000/Modding/PlateUp!/Dishes/Mexican Grill/obj/Debug/net6.0/Mexican Grill.AssemblyInfoInputs.cache
+/home/xamotex1000/Modding/PlateUp!/Dishes/Mexican Grill/obj/Debug/net6.0/Mexican Grill.AssemblyInfo.cs
+/home/xamotex1000/Modding/PlateUp!/Dishes/Mexican Grill/obj/Debug/net6.0/Mexican Grill.csproj.CoreCompileInputs.cache
+/home/xamotex1000/Modding/PlateUp!/Dishes/Mexican Grill/bin/Debug/net6.0/Mexican Grill.deps.json
+/home/xamotex1000/Modding/PlateUp!/Dishes/Mexican Grill/bin/Debug/net6.0/Mexican Grill.dll
+/home/xamotex1000/Modding/PlateUp!/Dishes/Mexican Grill/bin/Debug/net6.0/Mexican Grill.pdb
+/home/xamotex1000/Modding/PlateUp!/Dishes/Mexican Grill/obj/Debug/net6.0/Mexican Grill.dll
+/home/xamotex1000/Modding/PlateUp!/Dishes/Mexican Grill/obj/Debug/net6.0/Mexican Grill.pdb
