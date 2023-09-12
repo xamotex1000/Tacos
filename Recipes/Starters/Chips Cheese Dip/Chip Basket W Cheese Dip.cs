@@ -7,7 +7,7 @@ using KitchenLib.Utils;
 using System.Collections.Generic;
 using UnityEngine;
 using Mexican_Grill.Appliances.BasketProvider;
-using Mexican_Grill.Ingredients.Salsa;
+using Mexican_Grill.Ingredients.Queso;
 
 namespace Mexican_Grill.Starters.TortillaChips{
     public class ChipBasketCheese : CustomItemGroup<ItemGroupView>
@@ -24,7 +24,7 @@ namespace Mexican_Grill.Starters.TortillaChips{
                 Items = new()
                 {
                     GDOUtils.GetCastedGDO<Item, ChipBasket>(),
-                    GDOUtils.GetCastedGDO<Item, CheeseDip>(),
+                    GDOUtils.GetCastedGDO<Item, Queso>(),
                 },
                 Max = 2,
                 Min = 2,
