@@ -20,7 +20,7 @@ namespace Mexican_Grill.Ingredients.Queso{
         public override int SplitCount => 5;
         public override void SetupPrefab(GameObject prefab)
         {
-            prefab.ApplyMaterialToChild("Liquid", "Cheese");
+            prefab.ApplyMaterialToChild("Liquid", "Cheese - Default");
             prefab.ApplyMaterialToChild("Tomato/Skin", "Lettuce");
             prefab.ApplyMaterialToChild("Tomato/Flesh", "Cheese");
             prefab.ApplyMaterialToChild("Tomato/Seeds", "Lettuce");

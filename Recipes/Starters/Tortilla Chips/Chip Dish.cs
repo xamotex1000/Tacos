@@ -18,7 +18,6 @@ namespace Mexican_Grill.Starters.TortillaChips
     {
         public static Unlock TacoDish => Find<Unlock>(GDOUtils.GetCustomGameDataObject<TacoDish>().ID);
         public override string UniqueNameID => "Tortilla Chips Dish";
-        public override int MaxOrderSharers => 999;
         public override GameObject DisplayPrefab => GetPrefab("Chip Basket");
         public override GameObject IconPrefab => GetPrefab("Chip Basket");
         public override UnlockGroup UnlockGroup => UnlockGroup.Dish;

@@ -18,7 +18,7 @@ namespace Mexican_Grill.Ingredients.Queso{
         {
             prefab.ApplyMaterialToChild("Bowl", "Plate");
             prefab.ApplyMaterialToChild("Onions", "Lettuce");
-            prefab.ApplyMaterialToChild("Salsa", "Cheese");
+            prefab.ApplyMaterialToChild("Salsa", "Cheese - Default");
         }
     }
 }

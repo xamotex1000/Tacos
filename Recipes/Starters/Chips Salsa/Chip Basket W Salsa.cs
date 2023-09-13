@@ -15,6 +15,7 @@ namespace Mexican_Grill.Starters.TortillaChips{
         public override Appliance DedicatedProvider => GetCastedGDO<Appliance, BasketStack>();
         public override string UniqueNameID => "Salsa Chip Basket";
         public override ItemStorage ItemStorageFlags => ItemStorage.None;
+        public override int MaxOrderSharers => 999;
         public override Item DirtiesTo => GetCastedGDO<Item, Basket>();
         public override Item DisposesTo => GetCastedGDO<Item, Basket>();
         public override List<ItemGroup.ItemSet> Sets => new()

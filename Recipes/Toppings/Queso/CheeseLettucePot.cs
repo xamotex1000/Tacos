@@ -31,7 +31,7 @@ namespace Mexican_Grill.Ingredients.Queso{
             {
                 Items = new()
                 {
-                    GetGDO<Item>(000),
+                    GetGDO<Item>(-1397390776),
                 },
                 IsMandatory = true,
                 Max = 1,
@@ -41,8 +41,9 @@ namespace Mexican_Grill.Ingredients.Queso{
         public override GameObject Prefab => GetPrefab("CL Pot");
         public override void SetupPrefab(GameObject prefab)
         {
-            prefab.ApplyMaterialToChild("Cheese", "Cheese");
+            prefab.ApplyMaterialToChild("Cheese", "Cheese - Default");
             prefab.ApplyMaterialToChild("Lettuce", "Lettuce");
+            prefab.ApplyMaterialToChild("Lettuce 1", "Lettuce");
             prefab.ApplyMaterialToChild("Pot", "Metal");
             prefab.ApplyMaterialToChild("Pot/Handle", "Metal Dark");
         }

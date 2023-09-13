@@ -50,8 +50,9 @@ namespace Mexican_Grill.Ingredients.Queso{
         public override GameObject Prefab => GetPrefab("Queso Pot");
         public override void SetupPrefab(GameObject prefab)
         {
-            prefab.ApplyMaterialToChild("Cheese", "Cheese");
+            prefab.ApplyMaterialToChild("Cheese", "Cheese - Default");
             prefab.ApplyMaterialToChild("Lettuce", "Lettuce");
+            prefab.ApplyMaterialToChild("Lettuce 1", "Lettuce");
             prefab.ApplyMaterialToChild("Onions/1", "Onion - Flesh", "Onion");
             prefab.ApplyMaterialToChild("Onions/2", "Onion - Flesh", "Onion");
             prefab.ApplyMaterialToChild("Onions/3", "Onion - Flesh", "Onion");

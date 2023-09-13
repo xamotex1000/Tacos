@@ -14,6 +14,7 @@ namespace Mexican_Grill.Starters.TortillaChips{
     {
         public override Appliance DedicatedProvider => GetCastedGDO<Appliance, BasketStack>();
         public override string UniqueNameID => "Cheese Chip Basket";
+        public override int MaxOrderSharers => 999;
         public override ItemStorage ItemStorageFlags => ItemStorage.None;
         public override Item DirtiesTo => GetCastedGDO<Item, Basket>();
         public override Item DisposesTo => GetCastedGDO<Item, Basket>();
@@ -37,7 +38,7 @@ namespace Mexican_Grill.Starters.TortillaChips{
             prefab.ApplyMaterialToChild("Basket", "Raw Pastry");
             prefab.ApplyMaterialToChild("Cloth", "Rug - Red");
             prefab.ApplyMaterialToChild("Bowl", "Plate");
-            prefab.ApplyMaterialToChild("Salsa", "Cheese");
+            prefab.ApplyMaterialToChild("Salsa", "Cheese - Default");
             prefab.ApplyMaterialToChild("Onions", "Lettuce");
             prefab.ApplyMaterialToChild("1", "Pie - Mushroom");
             prefab.ApplyMaterialToChild("2", "Pie - Mushroom");
