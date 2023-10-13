@@ -1,16 +1,16 @@
 # Toppings
- [x] Steak
- [ ] Beans
- [x] Salsa
- [x] Guacamole (Included In IngredientLib)
- [x] Queso Dip
- [ ] Rice
- [ ] Cheese
- [ ] Lettuce
- [ ] Tomato
+ [x] Steak -Added
+ [ ] Beans -Included In Base Game
+ [x] Salsa -Added
+ [ ] Guacamole -Included in IngredientLib
+ [ ] Queso Dip -Added
+ [ ] White Rice -Included In Base Game
+ [ ] Cheese -Included In Base Game
+ [ ] Lettuce -Included In Base Game
+ [ ] Tomato -Included In Base Game
 # Dishes
- [x] Tacos - Soft
- [x] Tacos - Hard
+ [x] Tacos - Soft -Added
+ [x] Tacos - Hard -Added
  [ ] Burrito
  [ ] Quesidilla
  [ ] Fajita
@@ -19,14 +19,14 @@
  [ ] Rice
  [ ] Beans
 # Starters
- [x] Tortilla Chips
- [x] Tortilla Chips w/ Cheese Dip
- [x] Tortilla Chips w/ Salsa
- [ ] Tortilla Chips w/ Guac
+ [x] Tortilla Chips -Added
+ [x] Tortilla Chips w/ Cheese Dip -Added
+ [x] Tortilla Chips w/ Salsa -Added
+ [x] Tortilla Chips w/ Guac -Added
 # Deserts
  [ ] Churros
 # Other
  [ ] Corn Tortilla
 
 --Known Bugs--
- [ ] Material Mismatches
+ <CURRENTLY NONE ARE KNOWN>

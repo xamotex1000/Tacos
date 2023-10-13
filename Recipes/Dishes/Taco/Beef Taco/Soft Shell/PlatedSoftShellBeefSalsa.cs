@@ -9,9 +9,9 @@ using UnityEngine;
 using Mexican_Grill.Ingredients.Salsa;
 
 namespace Mexican_Grill.Tacos.Tacos{
-    public class PlatedHardBeefSalsa : CustomItemGroup<ItemGroupView>
+    public class PlatedSoftBeefSalsa : CustomItemGroup<ItemGroupView>
     {
-        public override string UniqueNameID => "PlateHardBeefSalsa";
+        public override string UniqueNameID => "PlateSoftBeefSalsa";
         public override ItemStorage ItemStorageFlags => ItemStorage.None;
         public override ItemCategory ItemCategory => ItemCategory.Generic;
         public override Item DisposesTo => GetGDO<Item>(ItemReferences.Plate);
@@ -23,16 +23,16 @@ namespace Mexican_Grill.Tacos.Tacos{
                 Items = new()
                 {
                     GetGDO<Item>(793377380),
-                    GDOUtils.GetCastedGDO<Item, HardBeefSalsa>()
+                    GDOUtils.GetCastedGDO<Item, SoftBeefSalsa>()
                 },
                 Max = 2,
                 Min = 2,
             }
         };
-        public override GameObject Prefab => GetPrefab("Plated Hard Beef Salsa Taco");
+        public override GameObject Prefab => GetPrefab("Plated Soft Beef Salsa Taco");
         public override void SetupPrefab(GameObject prefab)
         {
-            prefab.ApplyMaterialToChild("Shell", "Pie - Mushroom");
+            prefab.ApplyMaterialToChild("Shell", "Raw Pastry");
             prefab.ApplyMaterialToChild("Spill/Beef", "Meat Piece Cooked", "Meat Piece Cooked");
             prefab.ApplyMaterialToChild("Spill/Beef1", "Meat Piece Cooked", "Meat Piece Cooked");
             prefab.ApplyMaterialToChild("Spill/Beef2", "Meat Piece Cooked", "Meat Piece Cooked");

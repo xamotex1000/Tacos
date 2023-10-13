@@ -9,27 +9,32 @@ using UnityEngine;
 using Mexican_Grill.Appliances.BasketProvider;
 using Mexican_Grill.Starters.TortillaChips;
 
-namespace Mexican_Grill.Testing
+namespace Mexican_Grill.Tacos
 {
-    public class TestArea : CustomDish
+    public class TacoDish : CustomDish
     {
-        public override string UniqueNameID => "Testing Area";
+        public override string UniqueNameID => "Taco Dish";
         public override GameObject DisplayPrefab => GetPrefab("Plated Soft Beef Taco");
         public override GameObject IconPrefab => GetPrefab("Soft Beef Taco");
+        public override UnlockGroup UnlockGroup => UnlockGroup.Dish;
         public override CardType CardType => CardType.Default;
-        public override bool IsUnlockable => false;
+        public override bool IsUnlockable => true;
 
         public override bool IsAvailableAsLobbyOption => true;
         public override DishType Type => DishType.Base;
         public override List<string> StartingNameSet => new()
         {
-            "Workin' Progress",
-            "Error 404 Name Not Found",
-            "Appliance Meyhem",
-            "Testing Grounds",
-            "Provider Delights",
-            "Kitty Libra",
-            "Spoiler: It Doesn't Work"
+            "Taco 'Bout Delicious",
+            "Shell Yeah Tacos",
+            "Taco 'n' Roll",
+            "Shell Shocked",
+            "Holy Guacamole",
+            "That's a Wrap!",
+            "Taco the Town",
+            "Let's Taco 'Bout It",
+            "Nacho Ordinary Tacos",
+            "A Shell of a Good Time",
+            "Guac 'n' Roll"
         };
         public override Unlock.RewardLevel ExpReward => Unlock.RewardLevel.Medium;
 
@@ -47,12 +52,6 @@ namespace Mexican_Grill.Testing
                 Phase = MenuPhase.Main,
                 Weight = 1f
             },
-            new()
-            {
-                Item = GetCastedGDO<Item, PlatedHardBeefSalsa>(),
-                Phase = MenuPhase.Main,
-                Weight = 1f
-            },
         };
 
         public override HashSet<Process> RequiredProcesses => new()
@@ -63,15 +62,18 @@ namespace Mexican_Grill.Testing
         public override HashSet<Item> MinimumIngredients => new()
         {
             GetGDO<Item>(ItemReferences.Plate),
+            GetGDO<Item>(ItemReferences.Meat),
+            GetGDO<Item>(ItemReferences.Flour),
+            GetGDO<Item>(ItemReferences.Egg),
         };
 
         public override Dictionary<Locale, string> Recipe => new()
         {
-            { Locale.English, "THIS IS JUST A TESTING AREA. IT SHOULD NOT BE USED IN GAMEPLAY" }
+            { Locale.English, "Knead Flour Or Add Water To Make Dough, Add Egg To Make A Tortilla, Interact To Shape Into A Shell, Cook To Make A Hard Shell Or Leave Raw For Soft, Add Chopped Steak Or Beans, Cook, Plate, Serve" }
         };
         public override List<(Locale, UnlockInfo)> InfoList => new()
         {
-            (Locale.English, CreateUnlockInfo("Testing", "Dont select this", ""))
+            (Locale.English, CreateUnlockInfo("Tacos", "Adds Tacos as a main", ""))
         };
 
         public override void OnRegister(Dish gdo)
@@ -81,7 +83,7 @@ namespace Mexican_Grill.Testing
                 GetCastedGDO<Dish, HardBeefRecipe>(),
                 GetCastedGDO<Dish, SoftBeefRecipe>()
             };
-            gdo.Difficulty = 0;
+            gdo.Difficulty = 2;
         }
     }
 }

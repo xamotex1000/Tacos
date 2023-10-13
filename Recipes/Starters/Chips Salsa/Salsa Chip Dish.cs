@@ -69,6 +69,10 @@ namespace Mexican_Grill.Starters.TortillaChips
 
         public override void OnRegister(Dish gdo)
         {
+            gdo.AlsoAddRecipes = new()
+            {
+                GetCastedGDO<Dish, SalsaRecipe>()
+            };
             gdo.Difficulty = 2;
         }
     }

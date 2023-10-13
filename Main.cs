@@ -1,4 +1,5 @@
-﻿global using static Mexican_Grill.Main;
+﻿// I come back to the code and dont know what anything means. How do i write this and then completely forget what it means?!?!
+global using static Mexican_Grill.Main;
 global using static KitchenLib.Utils.GDOUtils;
 global using static KitchenLib.Utils.LocalisationUtils;
 using static KitchenLib.Utils.MaterialUtils;
@@ -33,7 +34,6 @@ namespace Mexican_Grill
         {
             // Reserved
         }
-
         protected override void OnPostActivate(Mod mod)
         {
             Bundle = mod.GetPacks<AssetBundleModPack>().SelectMany(e => e.AssetBundles).FirstOrDefault();
