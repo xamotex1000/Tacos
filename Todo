@@ -2,7 +2,7 @@
  [x] Steak
  [ ] Beans
  [x] Salsa
- [ ] Guacamole
+ [x] Guacamole (Included In IngredientLib)
  [x] Queso Dip
  [ ] Rice
  [ ] Cheese
@@ -25,3 +25,8 @@
  [ ] Tortilla Chips w/ Guac
 # Deserts
  [ ] Churros
+# Other
+ [ ] Corn Tortilla
+
+--Known Bugs--
+ [ ] Material Mismatches

@@ -32,23 +32,15 @@ namespace Mexican_Grill.Tacos.Tacos{
         public override void SetupPrefab(GameObject prefab)
         {
             prefab.ApplyMaterialToChild("Shell", "Pie - Mushroom");
-            prefab.ApplyMaterialToChild("Beef/1", "Meat Piece Cooked");
-            prefab.ApplyMaterialToChild("Beef/2", "Meat Piece Cooked");
-            prefab.ApplyMaterialToChild("Beef/3", "Meat Piece Cooked");
-            prefab.ApplyMaterialToChild("Beef/4", "Meat Piece Cooked");
-            prefab.ApplyMaterialToChild("Beef/5", "Meat Piece Cooked");
-            prefab.ApplyMaterialToChild("Beef/6", "Meat Piece Cooked");
-            prefab.ApplyMaterialToChild("Beef/7", "Meat Piece Cooked");
-            prefab.ApplyMaterialToChild("Beef/8", "Meat Piece Cooked");
-            prefab.ApplyMaterialToChild("Beef/9", "Meat Piece Cooked");
-            prefab.ApplyMaterialToChild("Beef/10", "Meat Piece Cooked");
-            prefab.ApplyMaterialToChild("Beef/11", "Meat Piece Cooked");
-            prefab.ApplyMaterialToChild("Beef/12", "Meat Piece Cooked");
             prefab.ApplyMaterialToChild("Beef/Spill", "Meat Piece Cooked", "Meat Piece Cooked");
             prefab.ApplyMaterialToChild("Beef/Spill1", "Meat Piece Cooked", "Meat Piece Cooked");
             prefab.ApplyMaterialToChild("Beef/Spill2", "Meat Piece Cooked", "Meat Piece Cooked");
             prefab.ApplyMaterialToChild("Beef/Spill3", "Meat Piece Cooked", "Meat Piece Cooked");
             prefab.ApplyMaterialToChild("Beef/Spill4", "Meat Piece Cooked", "Meat Piece Cooked");
+            prefab.ApplyMaterialToChild("Beef/Spill5", "Meat Piece Cooked", "Meat Piece Cooked");
+            prefab.ApplyMaterialToChild("Beef/Spill6", "Meat Piece Cooked", "Meat Piece Cooked");
+            prefab.ApplyMaterialToChild("Beef/Spill7", "Meat Piece Cooked", "Meat Piece Cooked");
+            prefab.ApplyMaterialToChild("Beef/Spill8", "Meat Piece Cooked", "Meat Piece Cooked");
             prefab.ApplyMaterialToChild("Plate", "Plate", "Plate - Ring");
         }
     }
