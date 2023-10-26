@@ -8,6 +8,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using Mexican_Grill.Appliances.BasketProvider;
 using Mexican_Grill.Starters.TortillaChips;
+using Mexican_Grill.Desserts.Churros;
 
 namespace Mexican_Grill.Testing
 {
@@ -58,12 +59,15 @@ namespace Mexican_Grill.Testing
         public override HashSet<Process> RequiredProcesses => new()
         {
             GetGDO<Process>(ProcessReferences.Cook),
+            GetGDO<Process>(ProcessReferences.Knead),
             GetGDO<Process>(ProcessReferences.Chop),
         };
         public override HashSet<Item> MinimumIngredients => new()
         {
-            GetGDO<Item>(ItemReferences.Plate),
-            GetCastedGDO<Item, Avocado>()
+            GetCastedGDO<Item, Cinnamon>(),
+            GetCastedGDO<Item, ChurroPan>(),
+            GetGDO<Item>(ItemReferences.Sugar),
+            GetGDO<Item>(ItemReferences.Flour),
         };
 
         public override Dictionary<Locale, string> Recipe => new()

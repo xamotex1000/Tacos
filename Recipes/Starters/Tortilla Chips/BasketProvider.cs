@@ -24,8 +24,8 @@ namespace Mexican_Grill.Appliances.BasketProvider{
         public override GameObject Prefab => GetPrefab("Basket Stack");
         public override void SetupPrefab(GameObject prefab)
         {
-	    var Collider = prefab.GetComponentInChildren<BoxCollider>();
-	    Collider.size = new Vector3(1, 1, 1);;
+	        var Collider = prefab.GetComponentInChildren<BoxCollider>();
+	        Collider.size = new Vector3(1, 1, 1);
             prefab.ApplyMaterialToChild("Stand", "Wood 1");
             prefab.ApplyMaterialToChild("Counter", "Wood - Default");
             prefab.ApplyMaterialToChild("Basket/Basket", "Raw Pastry");
