@@ -28,14 +28,14 @@
     [ ] Cheese
     [ ] Lettuce
     [ ] Tomato
-   [ ] Cheese
+   [ ] Cheese:
     [ ] None
     [ ] Lettuce
     [ ] Tomato
-   [ ] Lettuce
+   [ ] Lettuce:
     [ ] None
     [ ] Tomato
-   [ ] Tomato
+   [ ] Tomato:
     [ ] None
   [ ] Beans:
    [ ] None
@@ -65,14 +65,14 @@
     [ ] Cheese
     [ ] Lettuce
     [ ] Tomato
-   [ ] Cheese
+   [ ] Cheese:
     [ ] None
     [ ] Lettuce
     [ ] Tomato
-   [ ] Lettuce
+   [ ] Lettuce:
     [ ] None
     [ ] Tomato
-   [ ] Tomato
+   [ ] Tomato:
     [ ] None
 
  [ ] Burrito
