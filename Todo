@@ -6,8 +6,82 @@
  [ ] Lettuce -Included In Base Game
  [ ] Tomato -Included In Base Game
 # Dishes
- [ ] Tacos - Soft -Started
- [ ] Tacos - Hard -Started
+ [ ] Tacos:
+  [ ] Steak:
+   [x] None
+   [ ] Salsa:
+    [x] None
+    [ ] Guac
+    [ ] Queso
+    [ ] White Rice
+    [ ] Cheese
+    [ ] Lettuce
+    [ ] Tomato
+   [ ] Guac:
+    [x] None
+    [ ] Queso
+    [ ] White Rice
+    [ ] Cheese
+    [ ] Lettuce
+    [ ] Tomato
+   [ ] Queso:
+    [ ] None
+    [ ] White Rice
+    [ ] Cheese
+    [ ] Lettuce
+    [ ] Tomato
+   [ ] White Rice:
+    [ ] None
+    [ ] Cheese
+    [ ] Lettuce
+    [ ] Tomato
+   [ ] Cheese
+    [ ] None
+    [ ] Lettuce
+    [ ] Tomato
+   [ ] Lettuce
+    [ ] None
+    [ ] Tomato
+   [ ] Tomato
+    [ ] None
+  [ ] Beans:
+   [ ] None
+   [ ] Salsa:
+    [ ] None
+    [ ] Guac
+    [ ] Queso
+    [ ] White Rice
+    [ ] Cheese
+    [ ] Lettuce
+    [ ] Tomato
+   [ ] Guac:
+    [ ] None
+    [ ] Queso
+    [ ] White Rice
+    [ ] Cheese
+    [ ] Lettuce
+    [ ] Tomato
+   [ ] Queso:
+    [ ] None
+    [ ] White Rice
+    [ ] Cheese
+    [ ] Lettuce
+    [ ] Tomato
+   [ ] White Rice:
+    [ ] None
+    [ ] Cheese
+    [ ] Lettuce
+    [ ] Tomato
+   [ ] Cheese
+    [ ] None
+    [ ] Lettuce
+    [ ] Tomato
+   [ ] Lettuce
+    [ ] None
+    [ ] Tomato
+   [ ] Tomato
+    [ ] None
+
  [ ] Burrito
  [ ] Quesidilla
  [ ] Fajita
