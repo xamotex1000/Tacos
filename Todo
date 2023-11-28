@@ -1,16 +1,13 @@
 # Toppings (Tacos)
- [x] Steak -Added
  [ ] Beans -Included In Base Game
- [x] Salsa -Added
- [x] Guacamole -Included in IngredientLib
  [ ] Queso Dip -Added
  [ ] White Rice -Included In Base Game
  [ ] Cheese -Included In Base Game
  [ ] Lettuce -Included In Base Game
  [ ] Tomato -Included In Base Game
 # Dishes
- [x] Tacos - Soft -Added
- [x] Tacos - Hard -Added
+ [ ] Tacos - Soft -Started
+ [ ] Tacos - Hard -Started
  [ ] Burrito
  [ ] Quesidilla
  [ ] Fajita
@@ -19,12 +16,9 @@
  [ ] Rice
  [ ] Beans -Included In Base Game
 # Starters
- [x] Tortilla Chips -Added
- [x] Tortilla Chips w/ Cheese Dip -Added
- [x] Tortilla Chips w/ Salsa -Added
- [x] Tortilla Chips w/ Guac -Added
+-----------
 # Deserts
- [ ] Churros
+-----------
 # Other
  [ ] Corn Tortilla
 
